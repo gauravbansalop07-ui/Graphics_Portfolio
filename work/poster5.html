@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cyber Security Poster | Project</title>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{
+--bg:#090909;
+--card:rgba(255,255,255,.05);
+--border:rgba(255,255,255,.08);
+--text:#fff;
+--muted:#bdbdbd;
+--accent:#4F9CF9;
+--purple:#9b51e0;
+}
+body{
+font-family:'Space Grotesk',sans-serif;
+background:var(--bg);
+color:var(--text);
+overflow-x:hidden;
+position:relative;
+}
+body::before{
+content:"";
+position:fixed;
+width:55vw;height:55vw;
+top:-10%;left:-10%;
+background:var(--accent);
+border-radius:50%;
+filter:blur(150px);
+opacity:.18;
+animation:f1 16s ease-in-out infinite alternate;
+z-index:-2;
+}
+body::after{
+content:"";
+position:fixed;
+width:55vw;height:55vw;
+right:-10%;bottom:-10%;
+background:var(--purple);
+border-radius:50%;
+filter:blur(150px);
+opacity:.15;
+animation:f2 18s ease-in-out infinite alternate;
+z-index:-2;
+}
+@keyframes f1{to{transform:translate(50px,60px) rotate(15deg)}}
+@keyframes f2{to{transform:translate(-50px,-40px) rotate(-15deg)}}
+.container{width:min(1350px,92%);margin:50px auto;}
+.back{
+display:inline-flex;align-items:center;gap:10px;
+padding:12px 22px;
+border:1px solid var(--border);
+border-radius:30px;
+background:rgba(255,255,255,.04);
+text-decoration:none;color:#fff;
+transition:.3s;
+}
+.back:hover{background:var(--accent);transform:translateY(-3px)}
+.card{
+margin-top:30px;
+background:var(--card);
+backdrop-filter:blur(18px);
+border:1px solid var(--border);
+border-radius:28px;
+padding:40px;
+animation:fade .8s ease;
+}
+.project{
+display:grid;
+grid-template-columns:430px 1fr;
+gap:60px;
+align-items:start;
+}
+.left{display:flex;justify-content:center}
+.left img{
+width:100%;
+max-width:420px;
+border-radius:22px;
+box-shadow:0 25px 60px rgba(0,0,0,.45);
+transition:.4s;
+}
+.left img:hover{transform:scale(1.03)}
+.category{color:var(--accent);font-weight:600;letter-spacing:2px;text-transform:uppercase;font-size:.9rem}
+h1{font-size:3rem;margin:8px 0 18px}
+.desc{color:var(--muted);line-height:1.8;margin-bottom:30px}
+.grid{
+display:grid;
+grid-template-columns:repeat(2,minmax(180px,1fr));
+gap:18px;
+margin-bottom:35px;
+}
+.info{
+padding:18px;
+background:rgba(255,255,255,.03);
+border:1px solid var(--border);
+border-radius:18px;
+}
+.info h4{color:var(--accent);margin-bottom:8px}
+.section{margin-top:25px}
+.section h3{margin-bottom:12px}
+.tools{display:flex;gap:10px;flex-wrap:wrap}
+.tools span{
+padding:10px 18px;
+border-radius:22px;
+background:rgba(79,156,249,.15);
+border:1px solid rgba(79,156,249,.4);
+color:var(--accent);
+}
+.palette{display:flex;gap:14px;margin-top:10px}
+.swatch{
+width:46px;height:46px;border-radius:50%;
+border:2px solid rgba(255,255,255,.15)
+}
+.nav{
+display:flex;
+justify-content:space-between;
+margin-top:45px;
+padding-top:25px;
+border-top:1px solid var(--border);
+}
+.nav a{
+text-decoration:none;
+color:#fff;
+padding:12px 20px;
+border-radius:24px;
+border:1px solid var(--border);
+transition:.3s;
+}
+.nav a:hover{background:var(--accent)}
+@keyframes fade{from{opacity:0;transform:translateY(25px)}to{opacity:1;transform:none}}
+@media(max-width:900px){
+.project{grid-template-columns:1fr}
+.left img{max-width:330px}
+h1{font-size:2.2rem}
+.grid{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+<div class="container">
+<a href="/index.html" class="back">← Back to Portfolio</a>
+
+<div class="card">
+<div class="project">
+<div class="left">
+<img src="/images/poster5.png" alt="Ambedkar Jayanti">
+</div>
+
+<div class="right">
+<div class="category">Poster Design</div>
+<h1>Ambedkar Jayanti</h1>
+
+<p class="desc">
+A commemorative poster designed to honor Dr. B. R. Ambedkar, featuring a minimal layout, elegant typography, and symbolic visuals that reflect his contribution to equality and social justice.
+</p>
+
+<div class="grid">
+<div class="info">
+<h4>Software</h4>
+<p>Canva</p>
+</div>
+
+<div class="info">
+<h4>Duration</h4>
+<p>3 Hours</p>
+</div>
+
+<div class="info">
+<h4>Category</h4>
+<p>Poster Design</p>
+</div>
+
+<div class="info">
+<h4>Year</h4>
+<p>2026</p>
+</div>
+</div>
+
+<div class="section">
+<h3>Tools Used</h3>
+<div class="tools">
+<span>Canva</span>
+</div>
+</div>
+
+<div class="section">
+<h3>Project Overview</h3>
+<p class="desc">
+The aim of this design was to create a respectful and visually balanced tribute while maintaining simplicity. I used soft gradients, meaningful imagery, and clean typography to deliver a formal and impactful composition.
+</p>
+</div>
+
+<div class="section">
+<h3>Color Palette</h3>
+<div class="palette">
+<div class="swatch" style="background:black"></div>
+<div class="swatch" style="background:	white"></div>
+<div class="swatch" style="background:orange"></div>
+<div class="swatch" style="background:rgb(22, 188, 22)"></div>
+</div>
+</div>
+
+<div class="nav">
+<a href="poster4.html">← Previous Project</a>
+<a href="poster6.html">Next Project →</a>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>
