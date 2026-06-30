@@ -99,10 +99,10 @@ img { max-width: 100%; display: block; border-radius: 12px; }
     width: 50vw;
     height: 50vw;
     border-radius: 50%;
-    filter: blur(90px);
+    filter: blur(30px);
     z-index: -1;
     opacity: 0.10;
-    animation: float 15s infinite alternate ease-in-out;
+    animation: float 30s infinite alternate linear;
 }
 .glow-1 { top: -10%; left: -10%; background: var(--accent); }
 .glow-2 { bottom: -10%; right: -10%; background: #9b51e0; animation-delay: -5s; }
@@ -216,7 +216,7 @@ img { max-width: 100%; display: block; border-radius: 12px; }
     height: 300px;
     background: linear-gradient(135deg, var(--accent), #9b51e0);
     border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
-    animation: morph 8s ease-in-out infinite alternate;
+    animation: morph 10s linear infinite alternate;
     box-shadow: 0 0 50px var(--accent-glow);
 }
 
@@ -377,7 +377,7 @@ img { max-width: 100%; display: block; border-radius: 12px; }
     width: 100%;
     height: 100%;
     object-fit: cover;
-    transition: transform 0.6s cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition: transform 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 .poster-overlay {
     position: absolute;
@@ -477,9 +477,13 @@ img { max-width: 100%; display: block; border-radius: 12px; }
     50% { border-radius: 70% 30% 30% 70% / 70% 70% 30% 30%; }
     100% { border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%; }
 }
-@keyframes float {
-    0% { transform: translateY(0px) rotate(0deg); }
-    100% { transform: translateY(50px) rotate(15deg); }
+@keyframes float1{
+    from{
+        transform:translate(0,0);
+    }
+    to{
+        transform:translate(15px,15px);
+    }
 }
 
 /* CSS-Only Scroll Animations using modern view() timeline */
@@ -514,7 +518,7 @@ img { max-width: 100%; display: block; border-radius: 12px; }
     .nav-links {
         position: fixed; top: 0; right: -100%; width: 70%; height: 100vh;
         background: var(--bg-sec); flex-direction: column; justify-content: center;
-        transition: right 0.5s cubic-bezier(0.25, 0.8, 0.25, 1);
+        transition: right 0.25s cubic-bezier(0.25, 0.8, 0.25, 1);
         border-left: 1px solid var(--card-border); z-index: 1050;
     }
     .nav-toggle:checked ~ .nav-links { right: 0; }
