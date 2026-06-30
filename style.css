@@ -101,7 +101,7 @@ img { max-width: 100%; display: block; border-radius: 12px; }
     border-radius: 50%;
     filter: blur(60px);
     z-index: -1;
-    opacity: 0.10;
+    opacity: 0.18;
     animation: float 30s infinite alternate linear;
 }
 .glow-1 { top: -10%; left: -10%; background: var(--accent); }
