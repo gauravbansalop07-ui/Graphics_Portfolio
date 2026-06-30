@@ -99,9 +99,9 @@ img { max-width: 100%; display: block; border-radius: 12px; }
     width: 50vw;
     height: 50vw;
     border-radius: 50%;
-    filter: blur(120px);
+    filter: blur(90px);
     z-index: -1;
-    opacity: 0.15;
+    opacity: 0.10;
     animation: float 15s infinite alternate ease-in-out;
 }
 .glow-1 { top: -10%; left: -10%; background: var(--accent); }
