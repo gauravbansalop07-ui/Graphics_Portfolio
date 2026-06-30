@@ -76,7 +76,7 @@ img { max-width: 100%; display: block; border-radius: 12px; }
 /* Glassmorphism Classes */
 .glass-card {
     background: var(--card-bg);
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(15px);
     -webkit-backdrop-filter: blur(10px);
     border: 1px solid var(--card-border);
     border-radius: 20px;
@@ -99,9 +99,9 @@ img { max-width: 100%; display: block; border-radius: 12px; }
     width: 50vw;
     height: 50vw;
     border-radius: 50%;
-    filter: blur(60px);
+    filter: blur(70px);
     z-index: -1;
-    opacity: 0.18;
+    opacity: 0.09;
     animation: float 30s infinite alternate linear;
 }
 .glow-1 { top: -10%; left: -10%; background: var(--accent); }
@@ -119,7 +119,7 @@ img { max-width: 100%; display: block; border-radius: 12px; }
     justify-content: space-between;
     align-items: center;
     background: rgba(9, 9, 9, 0.7);
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(15px);
     border-bottom: 1px solid var(--card-border);
     z-index: 1000;
 }
